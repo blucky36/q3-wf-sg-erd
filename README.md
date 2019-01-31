@@ -17,6 +17,7 @@
 #### Route Plan
 ##### auth
 get /auth/spotify/callback --> redirect user to webpage with query strings attached including api tokens also adds new users to database/updates user info
+
 get /auth/spotify --> redirect user to spotify OAuth
 
 ##### user
@@ -24,15 +25,22 @@ get /api/users/:uid --> gets user info from database
 
 ##### playlists
 get /api/users/:uid/playlists --> gets all user playlists
+
 post /api/users/:uid/playlists --> posts a playlist
+
 get /api/users/:uid/playlists/:pid --> gets specific playlist from user
+
 patch /api/users/:uid/playlists/:pid --> edit a playlist
+
 delete /api/users/:uid/playlists/:pid --> delete a playlist --> also deletes all versions of that playlist
 
 ##### playlist versions
 get /api/users/:uid/playlists/:pid/versions --> gets all versions of a users playlist
+
 post /api/users/:uid/playlists/:pid/versions --> create a new version of a users playlist
+
 get /api/users/:uid/playlists/:pid/versions/:vid --> gets specific version of a users playlist --> spits out track list
+
 delete /api/users/:uid/playlists/:pid/versions/:vid --> delete a version of a playlist
 
 ##### tracks
