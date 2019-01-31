@@ -8,7 +8,7 @@
 
 #### Style Guide
 
-[style guide](styleGuidSpotifyRew.jpg)
+[style guide](styleGuideSpotifyRew.jpg)
 
 #### ERD
 
