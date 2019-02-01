@@ -21,27 +21,27 @@ get /auth/spotify/callback --> redirect user to webpage with query strings attac
 get /auth/spotify --> redirect user to spotify OAuth
 
 ##### user
-get /api/users/:uid --> gets user info from database
+get /api/users/:uid --> gets user info from database DONE
 
 ##### playlists
-get /api/users/:uid/playlists --> gets all user playlists
+get /api/users/:uid/playlists --> gets all user playlists DONE
 
 post /api/users/:uid/playlists --> posts a playlist
 
-get /api/users/:uid/playlists/:pid --> gets specific playlist from user
+get /api/users/:uid/playlists/:pid --> gets specific playlist from user DONE
 
 patch /api/users/:uid/playlists/:pid --> edit a playlist
 
-delete /api/users/:uid/playlists/:pid --> delete a playlist --> also deletes all versions of that playlist
+delete /api/users/:uid/playlists/:pid --> delete a playlist --> also deletes all versions of that playlist DONE
 
 ##### playlist versions
-get /api/users/:uid/playlists/:pid/versions --> gets all versions of a users playlist
+get /api/users/:uid/playlists/:pid/versions --> gets all versions of a users playlist DONE
 
 post /api/users/:uid/playlists/:pid/versions --> create a new version of a users playlist
 
-get /api/users/:uid/playlists/:pid/versions/:vid --> gets specific version of a users playlist --> spits out track list
+get /api/users/:uid/playlists/:pid/versions/:vid --> gets specific version of a users playlist --> spits out track list DONE
 
-delete /api/users/:uid/playlists/:pid/versions/:vid --> delete a version of a playlist
+delete /api/users/:uid/playlists/:pid/versions/:vid --> delete a version of a playlist DONE
 
 ##### tracks
 get /api/tracks/:id --> get track info
