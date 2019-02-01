@@ -16,9 +16,9 @@
 
 #### Route Plan
 ##### auth
-get /auth/spotify/callback --> redirect user to webpage with query strings attached including api tokens also adds new users to database/updates user info
+get /auth/spotify/callback --> redirect user to webpage with query strings attached including api tokens also adds new users to database/updates user info DONE
 
-get /auth/spotify --> redirect user to spotify OAuth
+get /auth/spotify --> redirect user to spotify OAuth DONE
 
 ##### user
 get /api/users/:uid --> gets user info from database DONE
